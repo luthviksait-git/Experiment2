@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityCare Hospital | Appointments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CityCare Hospital</h1>
+        <p>Your Health, Our Priority</p>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome to CityCare Hospital</h2>
+            <p>We provide quality healthcare with experienced doctors
+               and modern medical facilities.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Medical Services</h2>
+
+            <article>
+                <h3>Cardiology</h3>
+                <p>Expert heart care and cardiac treatments.</p>
+            </article>
+
+            <article>
+                <h3>Neurology</h3>
+                <p>Diagnosis and treatment of nervous system disorders.</p>
+            </article>
+
+            <article>
+                <h3>Orthopedics</h3>
+                <p>Advanced bone and joint treatments.</p>
+            </article>
+        </section>
+
+        <section id="doctors">
+            <h2>Our Doctors</h2>
+
+            <article>
+                <h3>Dr. Rahul Sharma</h3>
+                <p>Cardiologist</p>
+            </article>
+
+            <article>
+                <h3>Dr. Priya Reddy</h3>
+                <p>Neurologist</p>
+            </article>
+
+            <article>
+                <h3>Dr. Arjun Kumar</h3>
+                <p>Orthopedic Specialist</p>
+            </article>
+        </section>
+
+        <section id="appointment">
+            <h2>Book a Patient Appointment</h2>
+
+            <form id="appointmentForm">
+
+                <div class="form-group">
+                    <label for="name">Patient Name:</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your full name"
+                           autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email"
+                           autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="10-digit mobile number"
+                           pattern="[0-9]{10}"
+                           autocomplete="tel" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Select Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="">Choose a doctor</option>
+                        <option value="Dr. Rahul Sharma">Dr. Rahul Sharma</option>
+                        <option value="Dr. Priya Reddy">Dr. Priya Reddy</option>
+                        <option value="Dr. Arjun Kumar">Dr. Arjun Kumar</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Appointment Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Message:</label>
+                    <textarea id="message" name="message"
+                              rows="4"
+                              placeholder="Enter your message"></textarea>
+                </div>
+
+                <button type="submit">Book Appointment</button>
+
+                <p id="formMessage" role="status" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CityCare Hospital. All Rights Reserved.</p>
+        <address>
+            Contact: <a href="mailto:info@citycare.com">info@citycare.com</a>
+        </address>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
